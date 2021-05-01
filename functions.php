@@ -148,4 +148,9 @@ add_filter('comments_open', function($open, $post_id)
  */
 require 'inc/chif-baner.php';
 
+/**
+ * Baners
+ */
+require 'inc/baners.php';
+
 ?>

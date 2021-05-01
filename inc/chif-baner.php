@@ -1,6 +1,6 @@
 <?php
 /**
- * Widgets for baner
+ * Widgets for chif
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -13,8 +13,8 @@ class chifWidget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'baner', 
-			'Банер', // заголовок виджета
-			array( 'description' => 'Руководитель' ) // описание
+			'Руководитель', // заголовок виджета
+			array( 'description' => 'Банер для Руководителя' ) // описание
 		);
 	}
  
@@ -72,11 +72,9 @@ class chifWidget extends WP_Widget {
 /*
  * регистрация виджета
  */
-function baners_widget_load() {
+function school2_chif_baner_widget_load() {
 	register_widget( 'chifWidget' );
 }
-add_action( 'widgets_init', 'baners_widget_load' );
-
-
+add_action( 'widgets_init', 'school2_chif_baner_widget_load' );
 
 ?>
