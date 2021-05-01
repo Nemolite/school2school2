@@ -37,6 +37,43 @@ function school2school2_scripts_style() {
 }
 add_action( 'wp_enqueue_scripts', 'school2school2_scripts_style' );
 
+/**
+ * Добавление ссылка на сайт разработчика vandraren.ru
+ */
+function colormag_footer_socket_right_section() {
 
+	?>
+
+		<div class="footer-socket-right-section">
+		<?php
+		$site_link = '<a href="' . esc_url( 'https://vandraren.ru/' ) . '" title="' . esc_attr( 'Разработка web-проектов' ) . '" ><span>' . esc_html__( 'VANDRAREN - Разработка web-проектов', 'colormag' ) . '</span></a>';
+
+		$default_footer_value = sprintf(  esc_html__( 'Создание и техническая поддержка сайта:  %1$s', 'colormag' ), $site_link );
+
+		$colormag_footer_copyright = '<div class="copyright">' . $default_footer_value . '</div>';
+
+		echo $colormag_footer_copyright; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+	?>
+		</div>
+
+		<?php
+
+	}	
+
+/**
+ * Регистрация виджета для футера
+ */
+register_sidebar(
+	array(
+		'name'          => esc_html__( 'Footer Sidebar Tandex Map', 'colormag' ),
+		'id'            => 'school2_footer_sidebar_map',
+		'description'   => esc_html__( 'Shows widgets at footer sidebar yandex map.', 'colormag' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s clearfix">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title"><span>',
+		'after_title'   => '</span></h3>',
+	)
+);
 
 ?>
