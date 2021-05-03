@@ -153,4 +153,154 @@ require 'inc/chif-baner.php';
  */
 require 'inc/baners.php';
 
+/**
+ * Content top section
+ */
+function front_page_content_top_section() {
+?>
+<section id="colormag_featured_posts_widget-2" class="widget widget_featured_posts widget_featured_meta clearfix">
+		<h3 class="widget-title"><span>HEALTH</span></h3>
+		
+		<div class="first-post">
+			<div class="single-article clearfix">
+				<figure>
+					<a href="http://school2school2.local/destruction-in-montania/" title="Destruction in Montania">
+						<img width="390" height="205" 
+							 src="http://school2school2.local/wp-content/uploads/2021/04/fireman-390x205.jpg" 
+					 	 	 class="attachment-colormag-featured-post-medium size-colormag-featured-post-medium wp-post-image" 
+					 	     alt="Destruction in Montania" loading="lazy" title="Destruction in Montania">
+					</a>
+				</figure>
+				<div class="article-content">
+					
+					<h3 class="entry-title">
+						<a href="http://school2school2.local/destruction-in-montania/" title="Destruction in Montania">
+							Destruction in Montania
+						</a>
+					</h3>
+					<div class="below-entry-meta">
+						<span class="posted-on">
+							<a href="http://school2school2.local/destruction-in-montania/" title="6:39 am" rel="bookmark">
+					 			<i class="fa fa-calendar-o"></i> 
+									<time class="entry-date published updated" 
+						    			datetime="2021-04-29T06:39:04+00:00">
+										April 29, 2021
+									</time>
+							</a>
+						</span>				
+					</div>
+
+					<div class="entry-content">
+						<p>Nunc consectetur ipsum nisi, ut pellentesque felis tempus vitae. 
+							Integer eget lacinia nunc. Vestibulum consectetur convallis 
+							augue id egestas. Nullam Lorem ipsum, 
+							dolor sit amet consectetur adipisicing elit. 
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+			
+		<div class="following-post">
+		
+			<div class="single-article clearfix">
+
+				<figure>
+					<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+						<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
+					</a>
+				</figure>
+
+				<div class="article-content">
+					
+					<h3 class="entry-title">
+						<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+							A Paradise for Holiday
+						</a>
+					</h3>
+
+				</div>
+	
+			</div>
+
+			<div class="single-article clearfix">
+
+<figure>
+	<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+		<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
+	</a>
+</figure>
+
+<div class="article-content">
+	
+	<h3 class="entry-title">
+		<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+			A Paradise for Holiday
+		</a>
+	</h3>
+
+</div>
+
+</div>
+
+
+
+	<div class="single-article clearfix">
+
+				<figure>
+					<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+						<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
+					</a>
+				</figure>
+
+				<div class="article-content">
+					
+					<h3 class="entry-title">
+						<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+							A Paradise for Holiday
+						</a>
+					</h3>
+
+				</div>
+	
+			</div>
+
+
+			<div class="single-article clearfix">
+
+<figure>
+	<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+		<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
+	</a>
+</figure>
+
+<div class="article-content">
+	
+	<h3 class="entry-title">
+		<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
+			A Paradise for Holiday
+		</a>
+	</h3>
+
+</div>
+
+</div>
+
+
+
+			
+			
+			
+		
+			
+			
+</section>
+<?php
+}
+add_action('school2_front_page_content_top_section','front_page_content_top_section',10); 
+
 ?>
