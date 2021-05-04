@@ -293,4 +293,64 @@ function school2_top_section_info(){
 	register_post_type('top_section_info', $args  );
 }
 
+/**
+ * Блок Документация
+ */
+
+function school2_front_page_content_documentation() {
+?>
+<section id="colormag_featured_posts_widget-2" class="widget widget_featured_posts widget_featured_meta clearfix">
+		<h3 class="widget-title"><span>ДОКУМЕНТАЦИЯ</span></h3>
+		<div class="first-post">
+			<div class="single-article clearfix">
+				<?php dynamic_sidebar( 'documentation-left' ); ?>
+			</div>
+		</div>	
+		<div class="following-post">
+			<div class="single-article clearfix">
+				<?php dynamic_sidebar( 'documentation-right' ); ?>
+			</div>
+		</div>	
+</section>
+<?php
+}
+add_action('school2_front_page_content_documentation','school2_front_page_content_documentation',10); 
+
+/**
+ * Регистрация меню для раздела документации
+ */
+
+add_action( 'after_setup_theme', 'school2_register_nav_menu' );
+function school2_register_nav_menu() {
+	register_nav_menu( 'document_menu_left', 'Document Menu Left' );
+	register_nav_menu( 'document_menu_right', 'Document Menu Right' );
+
+}
+
+/**	
+ * Для раздела документации, для меню (левого и правого)
+ */
+
+function school2_register_documentation_left_widgets(){
+	register_sidebar( array(
+		'name' => 'Documentation Left',
+		'id' => 'documentation-left',
+		'before_widget' => '',
+		'after_widget' => '',
+		'description' => 'Банеры для Документация (левое)',		
+	) );
+}
+add_action( 'widgets_init', 'school2_register_documentation_left_widgets' );
+
+function school2_register_documentation_right_widgets(){
+	register_sidebar( array(
+		'name' => 'Documentation Right',
+		'id' => 'documentation-right',
+		'before_widget' => '',
+		'after_widget' => '',
+		'description' => 'Банеры для Документация (левое)',		
+	) );
+}
+add_action( 'widgets_init', 'school2_register_documentation_right_widgets' );
+
 ?>
