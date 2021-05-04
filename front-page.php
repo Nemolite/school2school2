@@ -51,11 +51,11 @@ if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) 
 				// Do not display the front pages sidebar areas when the Page Builder Template is activated.
 				if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) ) :
 
-               
+                /*
 					if ( is_active_sidebar( 'colormag_front_page_content_top_section' ) ) {
 						dynamic_sidebar( 'colormag_front_page_content_top_section' );						
 					}
-				
+				*/
 
 				/**
  				* hook front_page_content_top_section - 10

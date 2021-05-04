@@ -60,6 +60,14 @@
   color: #289dcc;
 }
 
-.school2-baner-border {
-  border:1px solid red;
+.scool2-date {
+  font-size: 12px;
+}
+
+.school2-below-entry-meta {
+  padding-bottom: 0px;
+}
+
+#school-entry-title {
+  padding-bottom: 6px;
 }

@@ -154,6 +154,11 @@ require 'inc/chif-baner.php';
 require 'inc/baners.php';
 
 /**
+ * Top Baners
+ */
+require 'inc/top-baners.php';
+
+/**
  * Content top section
  */
 function front_page_content_top_section() {
@@ -163,144 +168,129 @@ function front_page_content_top_section() {
 		
 		<div class="first-post">
 			<div class="single-article clearfix">
+
+<?php 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;	
+$args_info = array(   
+    'post_type'    => 'top_section_info',    
+	'posts_per_page' => 1,   
+	'paged' => $paged,
+);
+$query_info = new WP_Query( $args_info ); 
+if( $query_info->have_posts() ){
+	while( $query_info->have_posts() ){
+		$query_info->the_post();
+?>
+
+
 				<figure>
-					<a href="http://school2school2.local/destruction-in-montania/" title="Destruction in Montania">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<img width="390" height="205" 
 							 src="http://school2school2.local/wp-content/uploads/2021/04/fireman-390x205.jpg" 
 					 	 	 class="attachment-colormag-featured-post-medium size-colormag-featured-post-medium wp-post-image" 
-					 	     alt="Destruction in Montania" loading="lazy" title="Destruction in Montania">
+					 	     alt="<?php the_title(); ?>" loading="lazy" title="<?php the_title(); ?>">
 					</a>
 				</figure>
 				<div class="article-content">
 					
-					<h3 class="entry-title">
-						<a href="http://school2school2.local/destruction-in-montania/" title="Destruction in Montania">
-							Destruction in Montania
+					<h3 class="entry-title" id="school-entry-title">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php the_title(); ?>
 						</a>
 					</h3>
-					<div class="below-entry-meta">
+					<div class="school2-below-entry-meta">
 						<span class="posted-on">
-							<a href="http://school2school2.local/destruction-in-montania/" title="6:39 am" rel="bookmark">
-					 			<i class="fa fa-calendar-o"></i> 
-									<time class="entry-date published updated" 
-						    			datetime="2021-04-29T06:39:04+00:00">
-										April 29, 2021
-									</time>
-							</a>
+							
+								 <p class="scool2-date">
+									<i class="fa fa-calendar-o"></i> 
+								 	<?php the_date(); ?>
+								 </p>
+					
 						</span>				
 					</div>
 
 					<div class="entry-content">
-						<p>Nunc consectetur ipsum nisi, ut pellentesque felis tempus vitae. 
-							Integer eget lacinia nunc. Vestibulum consectetur convallis 
-							augue id egestas. Nullam Lorem ipsum, 
-							dolor sit amet consectetur adipisicing elit. 
+						<p>
+
+						<?php     
+        					$content_info = get_the_content();
+        					$trimmed_content_info = wp_trim_words( $content_info, 25, '<a href="'. get_permalink() .'"> ...Читать далее</a>' );
+        					echo $trimmed_content_info;
+    					?>
 						</p>
 					</div>
 				</div>
 
+
+
+				<?php
+	}
+	wp_reset_postdata(); 	
+} 
+?>
+
 			</div>
 		</div>
 
-
-
 			
-		<div class="following-post school2-baner-border">
-		
-			<div class="single-article clearfix">
-
-				<figure>
-					<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-						<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
-					</a>
-				</figure>
-
-				<div class="article-content">
-					
-					<h3 class="entry-title">
-						<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-							A Paradise for Holiday
-						</a>
-					</h3>
-
-				</div>
-	
-			</div>
-
-			<div class="single-article clearfix">
-
-<figure>
-	<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-		<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
-	</a>
-</figure>
-
-<div class="article-content">
-	
-	<h3 class="entry-title">
-		<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-			A Paradise for Holiday
-		</a>
-	</h3>
-
-</div>
-
-</div>
-
-
-
-	<div class="single-article clearfix">
-
-				<figure>
-					<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-						<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
-					</a>
-				</figure>
-
-				<div class="article-content">
-					
-					<h3 class="entry-title">
-						<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-							A Paradise for Holiday
-						</a>
-					</h3>
-
-				</div>
-	
-			</div>
-
-
-			<div class="single-article clearfix">
-
-<figure>
-	<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-		<img width="130" height="90" src="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg" class="attachment-colormag-featured-post-small size-colormag-featured-post-small wp-post-image" alt="A Paradise for Holiday" loading="lazy" title="A Paradise for Holiday" srcset="http://school2school2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2school2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" sizes="(max-width: 130px) 100vw, 130px">
-	</a>
-</figure>
-
-<div class="article-content">
-	
-	<h3 class="entry-title">
-		<a href="http://school2school2.local/a-paradise-for-holiday/" title="A Paradise for Holiday">
-			A Paradise for Holiday
-		</a>
-	</h3>
-
-</div>
-
-</div>
-
-
-
-			
-			
-			
-		
-			
-			
+		<div class="following-post">
+			<?php
+			if ( is_active_sidebar( 'top-section-baners' ) ) {
+						dynamic_sidebar( 'top-section-baners' );						
+					}
+			?>
+		</div>	
 </section>
 <?php
 }
 add_action('school2_front_page_content_top_section','front_page_content_top_section',10); 
+
+
+/**	
+ * Банеры в top секции
+ */
+
+function school2_register_top_section_widgets(){
+	register_sidebar( array(
+		'name' => 'Top section baners',
+		'id' => 'top-section-baners',
+		'description' => 'Банеры для Top Section',		
+	) );
+}
+add_action( 'widgets_init', 'school2_register_top_section_widgets' );
+
+/**
+ * Информация для Top Section
+ */
+
+
+add_action('init', 'school2_top_section_info');
+function school2_top_section_info(){
+	$labels = array(
+		'name'               => 'Информация', 
+		'singular_name'      => 'Информация', 
+		'add_new'            => 'Добавить новую',
+		'add_new_item'       => 'Добавить новую информацию',
+		'edit_item'          => 'Редактировать информацию',
+		'new_item'           => 'Новая информация',
+		'view_item'          => 'Посмотреть информацию',
+		'search_items'       => 'Найти информацию',
+		'not_found'          => 'Информации не найдено',
+		'not_found_in_trash' => 'В корзине информации не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Информация'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, // 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-media-document', 
+		'menu_position' => 20, 
+		'supports' => array( 'title', 'editor', 'thumbnail')
+	);	
+	register_post_type('top_section_info', $args  );
+}
 
 ?>
