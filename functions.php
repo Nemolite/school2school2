@@ -159,7 +159,7 @@ require 'inc/baners.php';
 function front_page_content_top_section() {
 ?>
 <section id="colormag_featured_posts_widget-2" class="widget widget_featured_posts widget_featured_meta clearfix">
-		<h3 class="widget-title"><span>HEALTH</span></h3>
+		<h3 class="widget-title"><span>ИНФОРМАЦИЯ</span></h3>
 		
 		<div class="first-post">
 			<div class="single-article clearfix">
@@ -205,7 +205,7 @@ function front_page_content_top_section() {
 
 
 			
-		<div class="following-post">
+		<div class="following-post school2-baner-border">
 		
 			<div class="single-article clearfix">
 

@@ -59,3 +59,7 @@
 .school2-banners-block-title a:hover {
   color: #289dcc;
 }
+
+.school2-baner-border {
+  border:1px solid red;
+}
