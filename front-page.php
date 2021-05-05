@@ -75,8 +75,11 @@ if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) 
  				*/
 				 do_action('school2_front_page_main_slider'); 
 
-
-				 
+				/**
+ 				* hook front_page_second_row_baners - 10
+				*
+ 				*/
+				 do_action( 'school2_front_page_second_row_baners');
 
 					if ( is_active_sidebar( 'colormag_front_page_content_middle_left_section' ) || is_active_sidebar( 'colormag_front_page_content_middle_right_section' ) ) {
 						?>
