@@ -302,12 +302,12 @@ function school2_front_page_content_documentation() {
 <section id="colormag_featured_posts_widget-2" class="widget widget_featured_posts widget_featured_meta clearfix">
 		<h3 class="widget-title"><span>ДОКУМЕНТАЦИЯ</span></h3>
 		<div class="first-post">
-			<div class="single-article clearfix">
+			<div class="single-article clearfix school2-single-article">
 				<?php dynamic_sidebar( 'documentation-left' ); ?>
 			</div>
 		</div>	
 		<div class="following-post">
-			<div class="single-article clearfix">
+			<div class="single-article clearfix school2-single-article">
 				<?php dynamic_sidebar( 'documentation-right' ); ?>
 			</div>
 		</div>	

@@ -71,3 +71,17 @@
 #school-entry-title {
   padding-bottom: 6px;
 }
+
+.school2-single-article {
+  padding-left: 10px;
+}
+
+.school2-single-article li {
+  padding-left: 10px;
+}
+
+.school2-single-article li:before {
+  content: "-";
+  padding-right: 3px; 
+  color: #289dcc;
+}
