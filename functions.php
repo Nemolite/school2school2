@@ -7,6 +7,12 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Classes
+ */
+
+require 'inc/school2.class.php';
+
+/**
  * Helper
  */
 function show($param){
@@ -365,4 +371,35 @@ function front_page_main_slider() {
 	<?php
 	}
 	add_action('school2_front_page_main_slider','front_page_main_slider',10); 
+
+
+	/**	
+    * Банеры в второй секции (левый)
+    */
+
+   function school2_register_second_left_baners_widgets(){
+	    register_sidebar( array(
+		    'name' => 'Second left section baners',
+		    'id' => 'second-left-baners',
+		    'description' => 'Банеры для Second Left Section',		
+	    ) );
+    }
+	add_action( 'widgets_init', 'school2_register_second_left_baners_widgets' );
+
+    /**	
+    * Банеры в второй секции (правый)
+    */
+
+    function school2_register_second_right_baners_widgets(){
+	    register_sidebar( array(
+		    'name' => 'Second right section baners',
+		    'id' => 'second-right-baners',
+		    'description' => 'Банеры для Second Right Section',		
+	    ) );
+    }
+	
+	add_action( 'widgets_init', 'school2_register_second_right_baners_widgets' );
+
+
+
 ?>
