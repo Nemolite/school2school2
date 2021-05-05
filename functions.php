@@ -352,5 +352,17 @@ function school2_register_documentation_right_widgets(){
 	) );
 }
 add_action( 'widgets_init', 'school2_register_documentation_right_widgets' );
+/**
+ * Main Slider
+ */
 
+function front_page_main_slider() {
+	?>
+<div class="article-container">
+<h3 class="widget-title"><span>ФОТОАЛЬБОМ</span></h3>
+	<?php echo do_shortcode('[metaslider id="50"]'); ?>
+</div>
+	<?php
+	}
+	add_action('school2_front_page_main_slider','front_page_main_slider',10); 
 ?>
