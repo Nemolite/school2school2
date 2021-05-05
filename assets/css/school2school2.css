@@ -85,3 +85,19 @@
   padding-right: 3px; 
   color: #289dcc;
 }
+
+.article-container .widget-title {
+  border-bottom: 2px solid #289dcc;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+
+.article-container .widget-title span{
+  background-color: #289dcc;
+  color: #ffffff;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+
