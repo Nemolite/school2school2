@@ -80,31 +80,31 @@ if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) 
 				*
  				*/
 				 do_action( 'school2_front_page_second_row_baners');
-
+				
 					if ( is_active_sidebar( 'colormag_front_page_content_middle_left_section' ) || is_active_sidebar( 'colormag_front_page_content_middle_right_section' ) ) {
 						?>
 						<div class="tg-one-half">
 							<?php
-							dynamic_sidebar( 'colormag_front_page_content_middle_left_section' );
+						//	dynamic_sidebar( 'colormag_front_page_content_middle_left_section' );
 							?>
 						</div>
 
 						<div class="tg-one-half tg-one-half-last">
 							<?php
-							dynamic_sidebar( 'colormag_front_page_content_middle_right_section' );
+						//	dynamic_sidebar( 'colormag_front_page_content_middle_right_section' );
 							?>
 						</div>
 
 						<div class="clearfix"></div>
 						<?php
 					}
-
+				
 					if ( is_active_sidebar( 'colormag_front_page_content_bottom_section' ) ) {
-						dynamic_sidebar( 'colormag_front_page_content_bottom_section' );
+						// dynamic_sidebar( 'colormag_front_page_content_bottom_section' );
 					}
-
+					
 				endif; // Do not display the front pages sidebar areas when the Page Builder Template is activated.
-
+				
 				if ( 0 == get_theme_mod( 'colormag_hide_blog_front', 0 ) ) :
 					?>
 

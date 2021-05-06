@@ -192,7 +192,7 @@ if( $query_info->have_posts() ){
 				<figure>
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<img width="390" height="205" 
-							 src="http://school2school2.local/wp-content/uploads/2021/04/fireman-390x205.jpg" 
+							 src="<?php echo get_the_post_thumbnail_url( );?>" 
 					 	 	 class="attachment-colormag-featured-post-medium size-colormag-featured-post-medium wp-post-image" 
 					 	     alt="<?php the_title(); ?>" loading="lazy" title="<?php the_title(); ?>">
 					</a>
