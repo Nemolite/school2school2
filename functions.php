@@ -366,7 +366,7 @@ function front_page_main_slider() {
 	?>
 <div class="article-container">
 <h3 class="widget-title"><span>ФОТОАЛЬБОМ</span></h3>
-	<?php echo do_shortcode('[metaslider id="50"]'); ?>
+	<?php echo do_shortcode('[metaslider id="59"]'); ?> <!-- id 50-->
 </div>
 	<?php
 	}
