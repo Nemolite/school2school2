@@ -40,7 +40,7 @@ class topWidget extends WP_Widget {
 
 				<div class="article-content">
 					
-					<h3 class="entry-title">
+					<h3 class="entry-title school2-entry-title-top-baner">
 						<a href="<?php echo esc_url($treatment['url']);?>" 
                         title="<?php echo __( $treatment['title'], 'school2');?>">
                         <?php echo __( $treatment['title'], 'school2');?>

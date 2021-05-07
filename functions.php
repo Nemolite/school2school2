@@ -331,6 +331,8 @@ function school2_register_nav_menu() {
 	register_nav_menu( 'document_menu_left', 'Document Menu Left' );
 	register_nav_menu( 'document_menu_right', 'Document Menu Right' );
 
+	register_nav_menu( 'document_sitebar', 'Document Side Bar' );
+
 }
 
 /**	
