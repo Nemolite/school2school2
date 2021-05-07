@@ -33,8 +33,7 @@ class banersWidget extends WP_Widget {
                 alt="<?php echo __( $param['title'], 'school2');?>" 
                 loading="lazy" 
                 title="<?php echo __( $param['title'], 'school2');?>" 
-                srcset="http://school2v2.local/wp-content/uploads/2021/04/sea-130x90.jpg 130w, http://school2v2.local/wp-content/uploads/2021/04/sea-392x272.jpg 392w" 
-                sizes="(max-width: 130px) 100vw, 130px">
+                >
             </a>
 
             </div>
