@@ -108,7 +108,7 @@ if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) 
 				if ( 0 == get_theme_mod( 'colormag_hide_blog_front', 0 ) ) :
 					?>
 
-					<div class="article-container">
+					<div class="article-container" id="article-container-news">
 						<?php
 						if ( have_posts() ) :
 

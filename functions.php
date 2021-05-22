@@ -306,7 +306,7 @@ function school2_top_section_info(){
 function school2_front_page_content_documentation() {
 ?>
 <section id="colormag_featured_posts_widget-2" class="widget widget_featured_posts widget_featured_meta clearfix">
-		<h3 class="widget-title"><span>ДОКУМЕНТАЦИЯ</span></h3>
+		<h3 class="widget-title" id="widget-title-doc"><span>ДОКУМЕНТАЦИЯ</span></h3>
 		<div class="first-post">
 			<div class="single-article clearfix school2-single-article">
 				<?php dynamic_sidebar( 'documentation-left' ); ?>
@@ -402,6 +402,13 @@ function front_page_main_slider() {
 	
 	add_action( 'widgets_init', 'school2_register_second_right_baners_widgets' );
 
-
+	function school2_colormag_before_plagin_visually_impaired(){
+	?>
+    	<div class="plagin-visually-impaired">
+		<?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+		</div>	
+	<?php
+	}
+	add_action( 'colormag_before' , 'school2_colormag_before_plagin_visually_impaired');
 
 ?>
