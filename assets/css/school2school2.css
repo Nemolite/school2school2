@@ -108,3 +108,10 @@
 .school2-entry-title-top-baner {
   font-size: 16px;
 }
+
+.plagin-visually-impaired {
+  width: 270px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+}
