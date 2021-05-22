@@ -180,7 +180,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args_info = array(   
     'post_type'    => 'top_section_info',    
 	'posts_per_page' => 1,   
-	'paged' => $paged,
+	
 );
 $query_info = new WP_Query( $args_info ); 
 if( $query_info->have_posts() ){
